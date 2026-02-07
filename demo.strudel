@@ -1,0 +1,124 @@
+samples('github:loonskai/livecoding-agent-demo-samples');
+const orderedIndex = createParam('orderedIndex');
+const setbpm = t => setcps(t/120)
+setbpm(130);
+
+// $: s("vinyl").osc().slow(4);
+// $: s("hh-1")
+//     .struct("[~ x]*8")
+//     .always(x => x.late(0.005))
+//     .slow(4)
+//     .gain(0.3)
+//     .bank("garage");
+// $: note("<[b1@3 e3] d2 a1 e1>")
+//     .s("reese")
+//     .slow(4)
+//     .osc();
+// $: orderedIndex(
+//     seq("0", "80", "7", "8", "14", "12", "50", "13")
+//   ).struct("x ~ x x <x ~> x <x ~> <x ~>")
+//     .s('drumSlice')
+//     .sometimes(x => x.early(0.1))
+//     .osc();
+// $: orderedIndex(
+//     seq("33")
+//   ).struct("[x ~]*2")
+//     .s('drumSlice')
+//     .osc();
+// $: s("rim-1")
+//     .struct("<~ x ~ <x [x ~ ~ x]>>")
+//     .fast(2)
+//     .bank("garage");
+// $: s("kick")
+//     .struct("x")
+//     .fast(2)
+//     .bank("garage");
+// $: s("phrase-6")
+//     .slice(16, "<5 3> <2 ~> <~ 10> <~ 12>")
+//     .room(2)
+//     .roomsize(2)
+//     .echo(2, 1/8, .1)
+//     .sometimes(x => x.speed(2))
+//     .gain(0.2)
+//     .slow(4)
+//     .bank("RKU_FFY");
+// $: note("<[A4, F#4, D4] [F#4, D4, B3] [E4, C#4, A3] [D4, A3, F#3]>")
+//     .s('synth')
+//     .slow(4)
+//     .midi();
+
+
+
+
+/////
+
+// ### Leads
+// - Add a detuned supersaw lead with filter envelope
+// - Create a plucky FM synth for arpeggios
+// - Add a monophonic acid-style 303 lead
+// - Create a glassy bell synth with long release
+
+// ### Pads/Chords
+// - Add a warm analog-style pad with slow attack
+// - Create a granular pad from the drum samples
+// - Add lush string-like synth with chorus
+// - Create a drone pad that follows the bass root
+
+// ### Melodic Textures
+// - Add a shimmer reverb synth in high register
+// - Create an arpeggiator synth with clock sync
+// - Add a vocal-like formant synth
+// - Create a pitched delay feedback instrument
+
+// ### Percussive Melodic
+// - Add a marimba/kalimba-style synth
+// - Create metallic FM percussion with pitch
+// - Add a plonky prepared piano sound
+
+// ### Experimental
+// - Add a synth that uses spectral freeze
+// - Create a feedback FM drone instrument
+// - Add a wavetable synth with morphing
+// - Create a resonator synth tuned to key
+
+// ---
+
+// ## Using Synths
+
+// ### Playing/Triggering
+// - Play a simple 4-note melody with the lead
+// - Trigger pad on chord changes every 4 bars
+// - Arpeggiate the current chord up and down
+// - Play lead notes on off-beats only
+
+// ### Patterns/Sequences
+// - Create a rising 8-note sequence
+// - Add call-and-response between lead and bass
+// - Play melody with probability-based note skips
+// - Sequence pad stabs on beats 2 and 4
+
+// ### Modulation/Expression
+// - Slowly open the lead filter over 8 bars
+// - Add pitch bend to lead phrases
+// - Swell pad volume in and out
+// - Humanize timing with slight randomness
+
+// ### Interaction
+// - Make lead follow the drum rhythm
+// - Sync arpeggiator to kick pattern
+// - Double the bass melody an octave up
+// - Fill gaps in drums with lead stabs
+
+// ### Arrangement
+// - Mute lead for 4 bars then bring back
+// - Fade in pad during breakdown
+// - Drop to just lead and vinyl
+// - Layer lead with octave harmony
+
+// ### Generative
+// - Generate random melody in A major scale
+// - Create evolving pattern that shifts each bar
+// - Randomize note lengths within phrase
+// - Pick notes from chord tones only
+
+// Hydra code with camera input, make it react to a.fft bass and mids, add some kaleidoscope effect

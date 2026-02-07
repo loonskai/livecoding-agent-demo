@@ -1,0 +1,10 @@
+{
+  "recommendations": [
+    "tidalcycles.vscode-tidalcycles",
+    "haskell.haskell",
+    "justusadam.language-haskell",
+    "cmillsdev.strudelvs",
+    "rickaym.manim-sideview"
+  ],
+  "unwantedRecommendations": []
+}

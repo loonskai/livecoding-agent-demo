@@ -1,0 +1,28 @@
+temp
+.DS_Store
+
+# Javascript
+node_modules
+dist
+
+# Python
+.venv
+__pycache__
+.ipynb_checkpoints
+
+# Ableton
+/**/*.asd
+demo Project/Backup/*
+**/Ableton Project Info/
+
+# Claude Code
+.claude/
+
+# Knowledge extractor
+.env
+videos.json
+screenshots/
+captures/**/*
+*-player-script.js
+
+!.gitkeep

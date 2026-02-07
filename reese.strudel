@@ -1,0 +1,4 @@
+const setbpm = t => setcps(t/2/60)
+setbpm(130);
+
+$: note("<b2 e3 d2 a2>").s("reese").slow(2).osc()

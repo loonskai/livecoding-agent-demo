@@ -1,0 +1,6 @@
+[submodule "livecoding-agent-demo-samples"]
+	path = livecoding-agent-demo-samples
+	url = git@github.com:loonskai/livecoding-agent-demo-samples.git
+[submodule "flok"]
+	path = flok
+	url = git@codeberg.org:loonskai/flok.git

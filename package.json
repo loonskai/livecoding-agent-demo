@@ -1,0 +1,26 @@
+{
+  "name": "strudel-knowledge-extractor",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Extract Strudel livecoding patterns from YouTube videos for RAG",
+  "main": "dist/index.js",
+  "scripts": {
+    "start": "tsx watch ./src/index.ts",
+    "web": "pnpm --filter flok-web dev --secure --session demo",
+    "repl": "pnpm --filter flok-repl dev -H wss://localhost:3000 -s demo",
+    "repl:remote_sclang": "pnpm repl -t remote_sclang",
+    "osc": "npx @strudel/osc",
+    "dev": "concurrently -n \"strudel:osc,flok-web,flok-repl:remote_sclang\" -c \"white,cyan,magenta,yellow\" \"pnpm osc\" \"pnpm web\" \"pnpm repl:remote_sclang\""
+  },
+  "dependencies": {
+    "@ai-sdk/mcp": "^1.0.4",
+    "flok": "git+https://codeberg.org/loonskai/flok.git",
+    "zod": "^4.3.5"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.2",
+    "concurrently": "^9.1.2",
+    "tsx": "^4.21.0",
+    "typescript": "^5.7.2"
+  }
+}
